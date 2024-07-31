@@ -17,11 +17,78 @@ body{
 }
 
 .header{
-    
+    padding: 20px;
     grid-column: 2;
 }
 
 .main{
     background-color: #e2e8f0;
     grid-column: 2;
+}
+
+img{
+    width: 24px;
+}
+
+.search{
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    align-items: center;
+}
+
+input{
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    max-width: 600px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    flex: 1;
+    padding: 8px;
+}
+
+.notification{
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.name{
+    display: flex;
+    gap: 14px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.upload{
+    display: flex;
+    gap: 24px;
+}
+
+.upload-btn{
+    height: 40px;
+    width: 120px;
+    background-color: #1992d4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+}
+
+.pp{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
