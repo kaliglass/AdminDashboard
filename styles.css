@@ -97,6 +97,53 @@ body{
     margin-top: 10px;
 }
 
+.announce{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.maincontain2{
+    flex: 1;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    margin-right: 20px;
+    padding: 20px 10px;
+    gap: 10px;
+}
+
+.maincontain2 p{
+    font-size: 12px;
+    color: #636363;
+}
+
+.inf{
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.inf:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    width: calc(100% - 32px);
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.inf:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    width: calc(100% - 32px); /* 100% minus the left and right padding */
+    border-bottom: 2px solid #e2e8f0; 
+}
 img{
     width: 24px;
 }
