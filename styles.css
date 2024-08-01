@@ -63,6 +63,38 @@ body{
 .main{
     background-color: #e2e8f0;
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects{
+    grid-column: 1;
+    grid-row: 1/-1;
+    padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.maincontain1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    flex: 1;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-left: 8px solid #f0b429;
+    border-radius: 8px;
+}
+
+.card p{
+    margin-top: 10px;
 }
 
 img{
