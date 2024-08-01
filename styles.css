@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+:root{
+    --box-shadow-grey: #cccccc;
+}
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -58,7 +60,11 @@ body{
 .header{
     padding: 20px;
     grid-column: 2;
+    box-shadow: 6px 6px 10px 0 var(--box-shadow-grey);
+    z-index: 100;
 }
+
+
 
 .main{
     background-color: #e2e8f0;
@@ -66,16 +72,16 @@ body{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 32px 24px 40px;
+    gap:24px;
 }
 
 .projects{
     grid-column: 1;
     grid-row: 1/-1;
-    padding: 20px;
-    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .maincontain1{
@@ -91,7 +97,9 @@ body{
     padding: 20px;
     border-left: 8px solid #f0b429;
     border-radius: 8px;
+    box-shadow: 6px 6px 10px 0 var(--box-shadow-grey);
 }
+
 
 .card p{
     margin-top: 10px;
@@ -100,7 +108,6 @@ body{
 .announce{
     display: flex;
     flex-direction: column;
-    padding: 20px;
     gap: 10px;
 }
 
@@ -112,6 +119,8 @@ body{
     margin-right: 20px;
     padding: 20px 10px;
     gap: 10px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px 0 var(--box-shadow-grey);
 }
 
 .maincontain2 p{
@@ -168,7 +177,7 @@ input{
 
 .notification{
     display: flex;
-    gap: 24px;
+    gap: 12px;
     margin-left: auto;
     align-items: center;
 }
@@ -209,4 +218,33 @@ input{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.trend{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.maincontain3{
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    margin-right: 20px;
+    padding:8px 20px;
+    gap: 10px;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px 0 var(--box-shadow-grey);
+}
+
+
+.infl{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.at{
+    font-weight: bold;
+    font-size: 13px;
 }
